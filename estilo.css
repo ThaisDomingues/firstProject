@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    font-family: "Open Sans", Helvetica, Arial;
+    color: #4d4d4d;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-family:"Open Sans";
+    font-weight: 700;
+    }
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right, rgb(17, 153, 142), rgb(56, 239, 125));
+}
+
+/* o seletor >  seleciona os links que sao filhos diretos da navegacao */
+
+nav > a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: Baloo;
+}
+
+nav > ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li {
+    text-align: center;
+    width: 100%;
+    font-family: 'Mitr';
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    background-color: #fff;
+    color: #27ae60;
+    
+}
+
+header {
+    background-color: #27ae60;
+  
+}
+
+
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px 20px;
+    background-color: #8f3faf;
+    color: #f1f1f1;
+     
+    
+}
+
+#servicos {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#servicos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#portifolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    background-color: #8f3faf;
+    color: #f1f1f1;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#portfolio h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+#serviços {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    background-color: #8f3faf;
+    color: #f1f1f1;
+    
+}
+
+#serviços div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    
+  
+}
+
+#serviços h3{
+  text-align: center;
+    margin-top: 30px;
+}
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4d4d4d;
+    color: #f1f1f1;
+}
+
+/*
+MEDIA QUERIES
+*/
+
+@media screen and (min-width: 768px) {
+    /*
+    NAVEGAÇÃO
+    */
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    nav ul {
+        flex-direction: row;
+        width: 70%;
+    }
+    
+    /*
+    CABEÇALHO
+    */
+    
+    header {
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
+    
+    /*
+    SOBRE
+    */
+    
+    #sobre {
+        height: 250px;
+        height: 30vh;
+        justify-content: center;
+        min-height: 250px;
+    }
+    
+    /*
+    SERVIÇOS
+    */
+    
+    #servicos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    #servicos h2 {
+        text-align: center;
+        width: 100%;
+    }
+    
+    #servicos div {
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+    
+    /*
+    PORTFOLIO
+    */
+    
+    #portfolio {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    #portfolio h2 {
+        width: 100%;
+        text-align: center;
+        text-align: center;
+        padding: 0 20px 20px;
+        background-color: #8f3faf;
+        color: #f1f1f1;
+      
+     
+    }
+    
+    
+    
+    /*
+    CONTATO
+    */
+    
+    #contato {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    #contato h2,
+    #contato p {
+        width: 100%;
+    }
+    
+
